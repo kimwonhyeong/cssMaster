@@ -1,9 +1,8 @@
-# cssMaster
+# cssMaster - flex
 
 chapter 0.
   1. block(옆으로 끝 없는 margin이 생), inline(text와 같은 성질, 높이와 너비 설정 불가능), inline-block(margin의 제거)
   2. nth-child
-  3. 
 
 chapter 1. (축에 대한 설명과 부모 태그를 이용한 자식 태그 조종)
   0. flexbox가 좋은 이유: 화면의 크기의 제약을 받지 않는다.
@@ -33,3 +32,28 @@ chapter 5.
   1. 절대 실제 width 값이 아님.
   2. flex-grow, flex-shrink 등의 의해서 바뀌게 됨.
   3. main-axis 축을 기준으로 적용된다.
+
+
+# cssMaster - grid
+
+chapter 0. (사용하는 이유)
+  0. flex로 격자 모양을 만들기는 성가시다.
+
+chapter 1.
+  0. 기본 세팅
+  1. grid-template-column: 300px 300px 300px or repeat(3, 300px)
+  2. grid-template-row: 200px 200px 200px or repeat(3, 200px)
+  3. column-gap, row-gap, gap (간격 설정)
+
+chapter 2.
+  0. grid-template-areas
+  (grid 부모)
+  1. grid-template-columns: 300px 300px 300px 300px;
+     grid-template-rows: repeat(4,200px);
+     grid-template-areas:
+        "header header header header"
+        "content content content nav"
+        "content content content nav"
+        "footer footer footer footer";
+  (grid 자식)
+  2. grid-area: header or content or nav or footer;
