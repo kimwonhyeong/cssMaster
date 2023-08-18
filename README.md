@@ -46,7 +46,7 @@ chapter 1.
   3. column-gap, row-gap, gap (간격 설정)
 
 chapter 2.
-  0. grid-template-areas
+  0. grid-template-areas (grid를 이용해서 범위를 더 유동적으로 설정할 수 있습니다.)
   (grid 부모)
   1. grid-template-columns: 300px 300px 300px 300px;
      grid-template-rows: repeat(4,200px);
@@ -57,3 +57,9 @@ chapter 2.
         "footer footer footer footer";
   (grid 자식)
   2. grid-area: header or content or nav or footer;
+
+chapter 3.
+  0. 어쩌면 grid-template-areas 보다 더 능률있게 큰 범위를 조종할 수 있을 것입니다.
+  1. grid-column-start: 1, grid-column-end: 5;
+  2. grid-column-start: 1, grid-column-end: 5;
+  3. shortCut 버전: grid-column: 1 / 5, grid-row: 1 / -1; (-1이라는 표현은 반대편 시작점이다. 즉, 종점.)
