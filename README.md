@@ -63,3 +63,22 @@ chapter 3.
   1. grid-column-start: 1, grid-column-end: 5;
   2. grid-column-start: 1, grid-column-end: 5;
   3. shortCut 버전: grid-column: 1 / 5, grid-row: 1 / -1; (-1이라는 표현은 반대편 시작점이다. 즉, 종점.)
+
+chapter 4.
+  0. fraction = fr
+  1. repeat(4, 1fr) 이런 식으로 표현하면 전체화면의 4등분
+  2. px은 절대적인 사이즈지만, fr은 상대적이라 전체 창을 줄이면 같이 줄어든다.
+  3. 높이의 경우 height를 직접 설정해주지 않으면 fr이 마음대로 조종되지 않는다. ex) height: 50vh;
+  4. grid-template:
+        "header header header header" 1fr(여기는 높이를 조종합니다) / (생략됐지만 여기는 가로 길이를 조종합니다.) (ex, 1fr 1fr 1fr 1fr)
+        "content content content nav" 2fr
+        "footer footer footer footer" 1fr
+     
+chapter 5.
+  0. justify-items (수평 길이 자체는 나둔 채 내용물이 수평으로 이동한다.)
+  1. align-items (수직 길이 자제는 나둔 채 내용물이 수직으로 이동한다.)
+  2. 기본값은 stretch
+
+chapter 6.
+  1. justify-content 와 align-content
+  2. items는 item 안에서 벌어지는 일이고, content는 grid 자체가 이동하는 모습을 보여준다.
