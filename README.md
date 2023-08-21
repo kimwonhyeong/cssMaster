@@ -82,3 +82,17 @@ chapter 5.
 chapter 6.
   1. justify-content 와 align-content
   2. items는 item 안에서 벌어지는 일이고, content는 grid 자체가 이동하는 모습을 보여준다.
+
+chapter 7.
+  0. self (각각의 아이템을 개별로 조종)
+  1. justify-self 나 align-self
+
+chapter 8.
+  1. 웹사이트 특성 상 계속해서 생기는 item 혹은 cell들이 존재한다. 그러다 보면 grid-template-rows의 값을 계속 고쳐주기 힘들다.
+  2. grid-auto-rows: 100px; 해주면 자동으로 맞춰준다.
+  3. grid-template-rows: repeat(4,200px);
+     grid-auto-rows: 100px;
+     이렇게도 된다.
+  4. grid-auto-flow (grid는 추가되는 아이템을 아래로 보내지만 column 방향으로 늘리고 싶을 때도 있다.)
+     grid-auto-flow: column 해버리면 flexbow direction처럼 방향을 뒤집어버린다.
+     그 다음 grid-auto-columns: 100px;하면 된다.
