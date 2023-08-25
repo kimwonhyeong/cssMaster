@@ -96,3 +96,15 @@ chapter 8.
   4. grid-auto-flow (grid는 추가되는 아이템을 아래로 보내지만 column 방향으로 늘리고 싶을 때도 있다.)
      grid-auto-flow: column 해버리면 flexbow direction처럼 방향을 뒤집어버린다.
      그 다음 grid-auto-columns: 100px;하면 된다.
+
+chapter 9.
+  1. minmax
+  2. 화면의 사이즈가 줄어들 때 grid가 더 이상은 줄어들 수 없다. 더 이상은 커질 수 없다. 라고 정하는 방법.
+  3. grid-template-columns: repeat(5, minmax(100px, 1fr))
+  4. grid-template-columns: repeat(5, minmax(100px, 200px))
+
+chapter 10.
+  1. 'auto fill' vs 'auto fit'
+  2. grid-template-columns: repeat(auto-fill or auto-fit, minmax(100px, 1fr))
+  3. auto-fill은 정확한 사이즈를 지키려고 한다. 공백이 생기더라도. (웹페이지 사이즈가 반응할 때)
+  4. auto-fit은 공백을 남기지 않으려고 사이즈가 움직인다. (웹페이지 사이즈가 반응할 때)
