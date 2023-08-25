@@ -105,6 +105,6 @@ chapter 9.
 
 chapter 10.
   1. 'auto fill' vs 'auto fit'
-  2. grid-template-columns: repeat(auto-fill or auto-fit, minmax(100px, 1fr))
-  3. auto-fill은 정확한 사이즈를 지키려고 한다. 공백이 생기더라도. (웹페이지 사이즈가 반응할 때)
-  4. auto-fit은 공백을 남기지 않으려고 사이즈가 움직인다. (웹페이지 사이즈가 반응할 때)
+    [auto-fill, auto-fit]
+  - Grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); //창 너비가 늘어나면 빈 column들로 row를 채움
+  - Grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); // 창 너비가 늘어나면 element를 늘려서 row에 맞게 해줌
