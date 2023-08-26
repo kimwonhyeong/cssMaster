@@ -108,3 +108,26 @@ chapter 10.
     [auto-fill, auto-fit]
   - Grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); //창 너비가 늘어나면 빈 column들로 row를 채움
   - Grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); // 창 너비가 늘어나면 element를 늘려서 row에 맞게 해줌
+
+
+# SCSS
+  chapter 0.
+    1.vite 설치
+    2.윈도우 터미널 들어가기
+    3.cd documents하기
+    4.npm create vite@latest
+    5.y누르고 이름 정하기
+    6.사용하는 프레임워크 알려주기
+    7.cd 정한이름
+    8.npm 설치하기 설치 했다는 무관. (npm install) (새 폴더를 사용한다면 또 npm을 설치해야 합니다.)
+    9.code . 입력해서 그 파일에 해당하는 vscode 열기.
+    10.서버 종료는 컨트롤 c
+    
+  chapter 1.
+    1. npm add -D sass
+    2. $bgColor: red; (scss로 css에 변수 설정한느 법)
+       background-color: $bgColor;
+    3. :root {
+         --bgColor: red;
+        }
+        background-color: var(--bgColor)
