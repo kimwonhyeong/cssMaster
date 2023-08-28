@@ -70,9 +70,9 @@ chapter 4.
   2. px은 절대적인 사이즈지만, fr은 상대적이라 전체 창을 줄이면 같이 줄어든다.
   3. 높이의 경우 height를 직접 설정해주지 않으면 fr이 마음대로 조종되지 않는다. ex) height: 50vh;
   4. grid-template:
-        "header header header header" 1fr(여기는 높이를 조종합니다) / (생략됐지만 여기는 가로 길이를 조종합니다.) (ex, 1fr 1fr 1fr 1fr)
+        "header header header header" 1fr(여기는 높이를 조종합니다)
         "content content content nav" 2fr
-        "footer footer footer footer" 1fr
+        "footer footer footer footer" 1fr / (생략됐지만 여기는 가로 길이를 조종합니다.) (ex, 1fr 1fr 1fr 1fr) (반드시 마지막 줄에만 적어줘야 한다)
      
 chapter 5.
   0. justify-items (수평 길이 자체는 나둔 채 내용물이 수평으로 이동한다.)
